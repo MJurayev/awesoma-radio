@@ -1,0 +1,45 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    &__title{
+        font-size: 40px;
+        line-height: 48px;
+        /* identical to box height, or 120% */
+        color: #83888F;
+    }
+
+    &__radio{
+        display: flex;
+    }
+
+    .quiz{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            
+            width: 30%;
+            background: #F4F1EB;
+            border-radius: 8px;
+            padding: 0;
+            overflow: hidden;
+            &__checkbox{
+                
+                appearance: none;
+                position: absolute;
+                &:checked ~ .content{
+                    background-color: #0E8784;
+                    color: white;
+                }
+            }
+            &__content{
+                padding: 20px;
+                padding-bottom: 80px;
+                &:hover{
+                    background-color: #FDD6BA;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
